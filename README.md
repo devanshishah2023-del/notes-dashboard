@@ -5,17 +5,24 @@ Add, edit (modal), delete (with confirm), and search notes. Every change goes th
 is applied **optimistically**, with automatic rollback if the server rejects it.
 
 notes-dashboard/
-├── backend/              FastAPI service (in-memory store) + pytest suite
+│
+├── backend/                         FastAPI service (in-memory store) + pytest suite
 │   ├── main.py
-│   └── tests/test_main.py
-└── frontend/             Vite + React app
+│   ├── requirements.txt
+│   └── tests/
+│       └── test_main.py
+│
+└── frontend/                        Vite + React app
     └── src/
-        ├── api/          fetch wrapper (ApiError) + typed notes endpoints
-        ├── hooks/        useNotes.ts — React Query query + optimistic mutations
-        ├── context/      ToastContext — app-wide notifications
-        ├── components/   NoteCard, NoteFormModal, loading/error/empty views
-        ├── lib/          filterNotes (pure search function)
-        └── App.tsx       the dashboard page
+        ├── api/                     fetch wrapper (ApiError) + typed notes endpoints
+        ├── hooks/
+        │   └── useNotes.ts          React Query query + optimistic mutations
+        ├── context/
+        │   └── ToastContext.tsx     app-wide notifications
+        ├── components/              NoteCard, NoteFormModal, loading/error/empty views
+        ├── lib/
+        │   └── filterNotes.ts       pure search function
+        └── App.tsx                  the dashboard page
 
 ## How to run
 
