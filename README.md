@@ -26,7 +26,6 @@ notes-dashboard/
         └── App.tsx                  the dashboard page
 ```
 
-The three backticks before and after are what makes it render as a fixed-width code block on GitHub. That's the only thing missing.
 ## How to run
 
 Requires **Python 3.10+** and **Node 20.19+**.
