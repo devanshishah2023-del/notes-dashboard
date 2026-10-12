@@ -1,0 +1,47 @@
+.shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.syncing {
+  color: var(--accent);
+}
+
+.toolbar {
+  margin-bottom: 24px;
+}
+
+.search {
+  max-width: 360px;
+}
+
+@media (max-width: 560px) {
+  .shell {
+    padding-top: 24px;
+  }
+
+  .search {
+    max-width: none;
+  }
+}
