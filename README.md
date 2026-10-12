@@ -4,6 +4,7 @@ A small notes app: **React 19 + TypeScript + React Query** on the front, **FastA
 Add, edit (modal), delete (with confirm), and search notes. Every change goes through the API and
 is applied **optimistically**, with automatic rollback if the server rejects it.
 
+```
 notes-dashboard/
 │
 ├── backend/                         FastAPI service (in-memory store) + pytest suite
@@ -23,7 +24,9 @@ notes-dashboard/
         ├── lib/
         │   └── filterNotes.ts       pure search function
         └── App.tsx                  the dashboard page
+```
 
+The three backticks before and after are what makes it render as a fixed-width code block on GitHub. That's the only thing missing.
 ## How to run
 
 Requires **Python 3.10+** and **Node 20.19+**.
